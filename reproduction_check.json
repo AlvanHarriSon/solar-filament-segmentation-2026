@@ -1,0 +1,48 @@
+{
+  "model": "Det533-E08-ROI04-SpatialQuality-Prune",
+  "verification_date": "2026-11-10",
+  "verification_method": "Executed the released notebook with nbclient in a clean copy containing the Python modules and bundled weights. The only supplied competition input was the 180 official test JPEGs. Verified output bytes against the submitted CSV.",
+  "completed_code_cells": 5,
+  "execution_wall_seconds_including_kernel_start_example_and_validation": 193.331,
+  "test_images": 180,
+  "instances": 1262,
+  "unique_filament_ids": 1262,
+  "images_with_predictions": 178,
+  "zero_instance_image_ids": [
+    "20200310113230Ch",
+    "20211214174010Mh"
+  ],
+  "columns": [
+    "filament_id",
+    "segmentation_rle"
+  ],
+  "same_bytes_as_submitted_csv": true,
+  "csv_sha256": "a0324008edfd7a4ea14a990a03e27667269da93475d5c096729003f90844f93e",
+  "original_mask_rle_roundtrips": true,
+  "native_instance_disjointness_checked": true,
+  "environment": {
+    "python": "3.11.9",
+    "system": "Windows",
+    "release": "10",
+    "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+    "driver": "617.42",
+    "cuda_runtime": "12.8",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "ultralytics": "8.4.29",
+    "nbclient": "0.10.2"
+  },
+  "verified_inputs_sha256": {
+    "requirements.txt": "fcc77f8518afdf51bcd49f8afff8b32e25152e4c32703103e55b8f1e8f375de1",
+    "reproduce.ipynb": "20a22a5695d150626c86e79738f9ca26a637a380f406cc5003e6381160332c76",
+    "solar_filaments.py": "1cad88699be5d866c575e9bd9883388c026b4fcc6da4dc8bfe04204821a55d64",
+    "filament_models.py": "56d6f477f61212ca3718e6514fca89e14c607f6b33af401836e56083dbf80264",
+    "weights/detector.pt": "0c7ebb3b147265682e5ab5c950142059cb6531832fe16ab4341d00044aa9de45",
+    "weights/fold_0.pt": "e4fd2ad52e6dfed784bfde5e09303dae54e7e368858f137fe62021af891605b3",
+    "weights/fold_1.pt": "4087ec77201d67309ae87df9494de18441781a92096379cc339750bdd849d839",
+    "weights/fold_2.pt": "807dfcafcfae4e6b425dff80490e6cf4340854faf77a97ff64807e9f567035a5",
+    "weights/fold_3.pt": "2e48de75da8a27dcbd8643231991c0f05cb93fb749df8961cc9d0e7ca54e60c8",
+    "weights/inference.json": "4606fe14156323669b42fe826f8575def07b80db07f4d691975b636076c229a7",
+    "weights/refiner.pt": "ce70ef0dd8ba942e9ca32df3c7de39be753cc2f79e340178510bafc530f72d86"
+  }
+}

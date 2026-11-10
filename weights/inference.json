@@ -1,0 +1,89 @@
+{
+  "features": [
+    "detector_score",
+    "mask_probability",
+    "log_area",
+    "fill_ratio",
+    "box_fraction",
+    "log_aspect",
+    "ring_minus_inside_gray",
+    "radial_distance"
+  ],
+  "ridge": {
+    "center": [
+      0.1952020784532561,
+      0.9059729087121279,
+      6.5773777138133624,
+      0.4101737007461987,
+      0.3620169270639293,
+      0.5931676038859879,
+      14.718632064488274,
+      0.57035972258952
+    ],
+    "scale": [
+      0.056694549147459444,
+      0.050779172080893976,
+      0.8103462089281723,
+      0.1438407113635352,
+      0.1406701687354799,
+      0.4343568696449475,
+      4.77651570272787,
+      0.18032887267476466
+    ],
+    "intercept": 0.12249587498156798,
+    "coef": [
+      0.005077846590256534,
+      0.021747006642014864,
+      0.033515848743390746,
+      0.03462364663394847,
+      -0.009048411405764251,
+      0.009485631451483886,
+      0.04168833444624996,
+      -0.011117861896814803
+    ]
+  },
+  "ridge_cutoff": 0.24,
+  "spatial_cutoff": 0.14546742802021495,
+  "weight_sha256": {
+    "detector.pt": "0c7ebb3b147265682e5ab5c950142059cb6531832fe16ab4341d00044aa9de45",
+    "fold_0.pt": "e4fd2ad52e6dfed784bfde5e09303dae54e7e368858f137fe62021af891605b3",
+    "fold_1.pt": "4087ec77201d67309ae87df9494de18441781a92096379cc339750bdd849d839",
+    "fold_2.pt": "807dfcafcfae4e6b425dff80490e6cf4340854faf77a97ff64807e9f567035a5",
+    "fold_3.pt": "2e48de75da8a27dcbd8643231991c0f05cb93fb749df8961cc9d0e7ca54e60c8",
+    "refiner.pt": "ce70ef0dd8ba942e9ca32df3c7de39be753cc2f79e340178510bafc530f72d86"
+  },
+  "model_lineage": {
+    "detector.pt": {
+      "architecture": "YOLO11m-seg",
+      "checkpoint": "EMA epoch 08",
+      "training_physical_images": 533,
+      "source_checkpoint_sha256": "7ca0cf53c86478702f1a034720e79d5bdd17be25072b655dbe4719e0657e06cb"
+    },
+    "refiner.pt": {
+      "architecture": "Seed-conditioned ResNet18 ROI U-Net",
+      "checkpoint": "epoch 04",
+      "training_physical_images": 533,
+      "source_checkpoint_sha256": "c723fbdfdfdd4da0bec708014778fb1a65c82b9fa66276c7477c2dca83fc6f7b"
+    },
+    "fold_0.pt": {
+      "architecture": "Spatial quality head",
+      "checkpoint": "epoch 24",
+      "source_checkpoint_sha256": "fcd8df1787601d5101b89a36962bfa1e4c911f9f98a49629aea4c4b018611347"
+    },
+    "fold_1.pt": {
+      "architecture": "Spatial quality head",
+      "checkpoint": "epoch 24",
+      "source_checkpoint_sha256": "b99a8c3b64f57940246a612e5ae3596c5074482fff66b7d167102c259b68466d"
+    },
+    "fold_2.pt": {
+      "architecture": "Spatial quality head",
+      "checkpoint": "epoch 24",
+      "source_checkpoint_sha256": "b2845b5796e23eac2a8f1e2f161142278973011aee12228ac0e7fa6bc7bd1330"
+    },
+    "fold_3.pt": {
+      "architecture": "Spatial quality head",
+      "checkpoint": "epoch 24",
+      "source_checkpoint_sha256": "73bab34aac9d23d9150ea9c9d1b36da61f096b38f8a538f7ee3fb54bad8493e6"
+    }
+  }
+}
